@@ -78,7 +78,7 @@ or
 2. Merges. Multiple people changing the same source file for different reasons. To avoid this problem is to separate code that supports different actors. Solution - move the functions into different classes. 
 
 SRP appears at two different levels:
-- Level of components (relates to [Common Closure Principle](https://ericbackhage.net/clean-code/the-common-closure-principle/))
+- Level of components (relates to [Common Closure Principle :link:](https://ericbackhage.net/clean-code/the-common-closure-principle/))
 - Architectural level (relates to [Axis of Change💡](#axis-of-change))
 
 ## <a name="ocp">3.4 OCP - Open-Closed Principle (goal of OO architecture)</a>
