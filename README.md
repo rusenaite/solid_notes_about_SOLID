@@ -111,4 +111,5 @@ An idea that changes in a system tend to occur around the axis of a class's resp
 5. [Wikipedia about Conway's Law](https://en.wikipedia.org/wiki/Conway%27s_law)
 6. [Conway's Law by Martin Fowler](https://martinfowler.com/bliki/ConwaysLaw.html)
 7. [Common Closure Principle](https://ericbackhage.net/clean-code/the-common-closure-principle/)
+8. [Common Closure Principle: The story of an evolving architecture](https://blog.devgenius.io/common-closure-principle-the-story-of-an-evolving-architecture-6919b452c8db)
 
