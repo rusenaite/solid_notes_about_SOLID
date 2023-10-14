@@ -153,6 +153,35 @@ To build software from interchangeable parts, those parts must adhere to a contr
 
 ## <a name="dip">3.7 DIP - Dependency Inversion Principle (primary mechanism of OO architecture)</a>
 
+> Depend upon Abstractions. Do not depend upon concretions.
+
+### About DIP
+It’s a strategy of depending upon interfaces or abstract functions & classes, rather than upon concrete functions & classes.
+
+### Problem
+Procedural architecture - dependency structure - like hierarchy in organisation management. High level modules deal with the high level policies of application. High level modules directly depend on implementation modules.
+
+### Practices
+- Don’t refer to volatile concrete classes. Don’t refer to volatile concrete classes.
+- Don’t derive from volatile concrete classes
+- Don’t override concrete functions. Concrete functions often require source code dependencies. When you override those functions, you do not eliminate those dependencies—indeed, you inherit them. To manage those dependencies, you should make the function abstract and create multiple implementations.
+- Never mention the name of anything concrete and volatile
+
+### Solution: Object-oriented architecture
+1. Dependencies point towards abstractions
+2. Dependencies are inverted (upside-down)
+3. Modules with implementation are not depended upon (main modules -> mid modules -> detail) but depend themselves upon abstractions (high level  -> abstraction <- detail)
+4. Depending upon abstractions - every dependency in design should target an interface, or an abstract class. No dependency should target a concrete class.
+5. Abstractions are “hinge points”, they represent the places where the design can bend or be extended, without themselves being modified (OCP).
+6. Abstract factory
+
+### Motivation
+- Concrete things change a lot, abstract - less frequently.
+- DIP prevents from depending upon volatile (nepastovių) modules.
+- Anything concrete is volatile (exceptions in early development)
+- Non-volatility is not a replacement for the substitutability of an abstract interface. Consistency < interface.
+- Concrete class design creates instances -> littering architecture with dependencies upon abstract classes.
+
 ## <a name="concepts">Concepts :bulb:</a>
 
 **<a name="mid-level">💡 Mid-level</a>**  
