@@ -82,6 +82,29 @@ SRP appears at two different levels:
 - Architectural level (relates to [Axis of Change💡](#axis-of-change))
 
 ## <a name="ocp">3.4 OCP - Open-Closed Principle (goal of OO architecture)</a>
+
+> A module should be open for extension but closed for modification.
+
+### Main idea
+Software must be designed to allow the behavior of it to be changed by adding new code, rather than changing existing code.
+
+### Goal of OCP
+To make the system easy to extend without incurring a high impact of change. Modules are extensible without being changed, ability to add new features without changing existing code.
+
+If simple extensions to the requirements force massive changes to the software, then the architects of that software system have engaged in a spectacular failure.
+
+### Take in account
+- Directional control (make sure that the dependencies between the components pointed in the correct direction)
+- Information hiding (protect from knowing too much)
+
+***Technique***: Abstraction.  
+***Solutions***:  
+
+| Solution  | Description |
+| ------------- | ------------- |
+| Dynamic polymorphism  | Run time. Overriding, virtual functions (depending on interfaces, new types get new class, no main function that handles types with switch…case, no modification when adding new type)  |
+| Static polymorphism  | Compile time. Overloading (templates or generics)  |
+
 ## <a name="lsp">3.5 LSP - Liskov Substitution Principle</a>
 ## <a name="isp">3.6 ISP - Interface Segregation Principle</a>
 ## <a name="dip">3.7 DIP - Dependency Inversion Principle (primary mechanism of OO architecture)</a>
