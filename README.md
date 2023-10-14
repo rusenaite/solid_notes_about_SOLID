@@ -106,6 +106,35 @@ If simple extensions to the requirements force massive changes to the software, 
 | Static polymorphism  | Compile time. Overloading (templates or generics)  |
 
 ## <a name="lsp">3.5 LSP - Liskov Substitution Principle</a>
+
+> Subclasses should be substitutable for their base classes.
+
+or
+
+> Methods that use references to base classes must be able to use objects of derived classes without knowing it.
+
+### About LSP
+Substitutable - capable of being exchanged.
+Users of a base class should continue to function properly if a derivative of that base class is passed to it.
+Violations of LSP are latent (hidden) violations of OCP.
+Repercussions (unintended consequences) of LSP violation can be using if/else statements as a fix for such violations.
+
+### Contracts
+
+| Contract  | Description |
+| ------------- | ------------- |
+| Implicit contract | Set of rules or constraints that a subclass must adhere to in order to be used as a substitute for its superclass. This contract is implicit because it is not explicitly defined, but rather is implied by the behavior of the superclass and the relationship between the subclass and superclass. |  
+| Explicit contract | Set of rules or constraints that a subclass must adhere to in order to be used as a substitute for its superclass. These rules or constraints are explicitly defined in the code, documentation, or other forms of communication. This allows other developers to understand how to use the subclass and what behavior to expect from it. By adhering to an explicit contract, the subclass can be used in place of the superclass without causing any unexpected behavior or errors in the code. |  
+
+To build software from interchangeable parts, those parts must adhere to a contract that allows those parts to be substituted one for another.
+
+### Solutions:
+1. Design by contract (contract of the base class must be honored by the derived class)
+2. Derived class is substitutable (capable of being exchanged) for its base class if:
+   * Its preconditions (declarations that are true before the method is called) are no stronger than the base class method.
+   * Its postconditions (declarations what method guarantees will be true once its completed) are no weaker than the base class method.
+5. Derived methods should expect no more and provide no less.
+
 ## <a name="isp">3.6 ISP - Interface Segregation Principle</a>
 ## <a name="dip">3.7 DIP - Dependency Inversion Principle (primary mechanism of OO architecture)</a>
 
