@@ -136,6 +136,21 @@ To build software from interchangeable parts, those parts must adhere to a contr
 5. Derived methods should expect no more and provide no less.
 
 ## <a name="isp">3.6 ISP - Interface Segregation Principle</a>
+
+> Many client specific interfaces are better than one general purpose interface.
+
+***Technique***:  
+- If you have a class that has several clients, rather than loading the class with all the methods that the clients need, create specific interfaces for each client and multiply inherit them into the class.
+- Without ISP components and classes would be much less useful and portable.
+- Avoid depending on things that you don’t use.
+
+### Solutions:
+
+| Solution  | Description |
+| ------------- | ------------- |
+| Client Specific | Categorizing clients by their type, and interfaces for each type of client should be created. If two or more different client types need the same method, the method should be added to both of their interfaces. |  
+| Changing Interfaces | Clients of the old interface that wish to access methods of the new interface, can query the object for that interface (but do not overdo it). |  
+
 ## <a name="dip">3.7 DIP - Dependency Inversion Principle (primary mechanism of OO architecture)</a>
 
 ## <a name="concepts">Concepts :bulb:</a>
