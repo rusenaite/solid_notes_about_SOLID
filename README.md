@@ -59,7 +59,7 @@ or
 
 > A module should be responsible to one, and only one, actor. 
 
-![Alt text](https://media.giphy.com/media/dDFxLN7kLYVA4zc0qp/giphy.gif)
+<img src="https://media.giphy.com/media/dDFxLN7kLYVA4zc0qp/giphy.gif" width="500" height="400"/>
 
 ### What SRP is NOT:  
 “A function should do one, and only one, thing.” - it’s a refactoring principle, to refactor large functions into smaller functions; we use it at the lowest levels. But it’s NOT the SRP.
@@ -108,7 +108,7 @@ If simple extensions to the requirements force massive changes to the software, 
 | Static polymorphism  | Compile time. Overloading (templates or generics)  |   
 
 Here is an illustration on how using Open-Closed Principle looks like when adding new feature:
-![Alt text](https://miro.medium.com/v2/resize:fit:1100/format:webp/1*Cuafrk_ZgQtKK6n4HBT_fQ.png)
+<img src="https://miro.medium.com/v2/resize:fit:1100/format:webp/1*Cuafrk_ZgQtKK6n4HBT_fQ.png" width="700" height="400"/>
 
 ## <a name="lsp">3.5 LSP - Liskov Substitution Principle</a>
 
@@ -118,7 +118,7 @@ or
 
 > Methods that use references to base classes must be able to use objects of derived classes without knowing it.
 
-![Alt text](https://media.giphy.com/media/l36kU80xPf0ojG0Erg/giphy.gif)
+<img src="https://media.giphy.com/media/l36kU80xPf0ojG0Erg/giphy.gif" width="600" height="400"/>
 
 ### About LSP
 Substitutable - capable of being exchanged.
@@ -146,7 +146,7 @@ To build software from interchangeable parts, those parts must adhere to a contr
 
 > Many client specific interfaces are better than one general purpose interface.
 
-![Alt Text](https://media.giphy.com/media/3orif9Lbi54jzaFcpa/giphy.gif)
+<img src="https://media.giphy.com/media/3orif9Lbi54jzaFcpa/giphy.gif" width="650" height="400"/>
 
 ***Technique***:  
 - If you have a class that has several clients, rather than loading the class with all the methods that the clients need, create specific interfaces for each client and multiply inherit them into the class.
@@ -164,7 +164,7 @@ To build software from interchangeable parts, those parts must adhere to a contr
 
 > Depend upon Abstractions. Do not depend upon concretions.
 
-![Alt text](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExcTdpcXA3N2FqY3huZ21sZHMydTF2cHJ6MHRyOXdrZGF2NXhnYW0yaSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/E47JKwZnxvHuPjPkn1/giphy.gif)
+<img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExcTdpcXA3N2FqY3huZ21sZHMydTF2cHJ6MHRyOXdrZGF2NXhnYW0yaSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/E47JKwZnxvHuPjPkn1/giphy.gif" width="450" height="400"/>
 
 ### About DIP
 It’s a strategy of depending upon interfaces or abstract functions & classes, rather than upon concrete functions & classes.
@@ -193,7 +193,9 @@ Procedural architecture - dependency structure - like hierarchy in organisation 
 - Non-volatility is not a replacement for the substitutability of an abstract interface. Consistency < interface.
 - Concrete class design creates instances -> littering architecture with dependencies upon abstract classes.
 
-<img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExcnk0NHZqaDZsbWpyN2ZzZDh6YnV0Y201aWoyNWx0YWw1bTh3dm01dCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/y2qhz4wPA2XlK/giphy.gif" width="550" height="500"/>
+##
+
+<img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExcnk0NHZqaDZsbWpyN2ZzZDh6YnV0Y201aWoyNWx0YWw1bTh3dm01dCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/y2qhz4wPA2XlK/giphy.gif" width="450" height="400"/>
 
 ## <a name="concepts">Concepts :bulb:</a>
 
