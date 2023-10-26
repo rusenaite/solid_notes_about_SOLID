@@ -59,6 +59,8 @@ or
 
 > A module should be responsible to one, and only one, actor. 
 
+![Alt text](https://media.giphy.com/media/dDFxLN7kLYVA4zc0qp/giphy.gif)
+
 ### What SRP is NOT:  
 “A function should do one, and only one, thing.” - it’s a refactoring principle, to refactor large functions into smaller functions; we use it at the lowest levels. But it’s NOT the SRP.
 
@@ -103,7 +105,10 @@ If simple extensions to the requirements force massive changes to the software, 
 | Solution  | Description |
 | ------------- | ------------- |
 | Dynamic polymorphism  | Run time. Overriding, virtual functions (depending on interfaces, new types get new class, no main function that handles types with switch…case, no modification when adding new type)  |
-| Static polymorphism  | Compile time. Overloading (templates or generics)  |
+| Static polymorphism  | Compile time. Overloading (templates or generics)  |   
+
+Here is an illustration on how using Open-Closed Principle looks like when adding new feature:
+![Alt text](https://miro.medium.com/v2/resize:fit:1100/format:webp/1*Cuafrk_ZgQtKK6n4HBT_fQ.png)
 
 ## <a name="lsp">3.5 LSP - Liskov Substitution Principle</a>
 
@@ -112,6 +117,8 @@ If simple extensions to the requirements force massive changes to the software, 
 or
 
 > Methods that use references to base classes must be able to use objects of derived classes without knowing it.
+
+![Alt text](https://media.giphy.com/media/l36kU80xPf0ojG0Erg/giphy.gif)
 
 ### About LSP
 Substitutable - capable of being exchanged.
@@ -139,6 +146,8 @@ To build software from interchangeable parts, those parts must adhere to a contr
 
 > Many client specific interfaces are better than one general purpose interface.
 
+![Alt Text](https://media.giphy.com/media/3orif9Lbi54jzaFcpa/giphy.gif)
+
 ***Technique***:  
 - If you have a class that has several clients, rather than loading the class with all the methods that the clients need, create specific interfaces for each client and multiply inherit them into the class.
 - Without ISP components and classes would be much less useful and portable.
@@ -154,6 +163,8 @@ To build software from interchangeable parts, those parts must adhere to a contr
 ## <a name="dip">3.7 DIP - Dependency Inversion Principle (primary mechanism of OO architecture)</a>
 
 > Depend upon Abstractions. Do not depend upon concretions.
+
+![Alt text](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExcTdpcXA3N2FqY3huZ21sZHMydTF2cHJ6MHRyOXdrZGF2NXhnYW0yaSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/E47JKwZnxvHuPjPkn1/giphy.gif)
 
 ### About DIP
 It’s a strategy of depending upon interfaces or abstract functions & classes, rather than upon concrete functions & classes.
@@ -182,6 +193,8 @@ Procedural architecture - dependency structure - like hierarchy in organisation 
 - Non-volatility is not a replacement for the substitutability of an abstract interface. Consistency < interface.
 - Concrete class design creates instances -> littering architecture with dependencies upon abstract classes.
 
+<img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExcnk0NHZqaDZsbWpyN2ZzZDh6YnV0Y201aWoyNWx0YWw1bTh3dm01dCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/y2qhz4wPA2XlK/giphy.gif" width="550" height="500"/>
+
 ## <a name="concepts">Concepts :bulb:</a>
 
 **<a name="mid-level">💡 Mid-level</a>**  
@@ -199,7 +212,7 @@ Degree of interdependence between software modules.
 **<a name="axis-of-change">💡 Axis of Change</a>**  
 An idea that changes in a system tend to occur around the axis of a class's responsibility. When a change is needed, it's likely to be in the area of a class's responsibility. By having each class focus on a single responsibility, it becomes easier to manage changes because they are likely to be localized to specific classes.
 
-## <a name="links">Links</a>
+## <a name="links">Links of references</a>
 1. [Clean Architecture: A Craftsman's Guide to Software Structure and Design by Robert C. Martin](https://g.co/kgs/554Z2i)
 2. [Design Principles and Design Patterns by Robert C. Martin (2000)](https://web.archive.org/web/20150906155800/http://www.objectmentor.com/resources/articles/Principles_and_Patterns.pdf)
 3. [Wikipedia about Cohesion](https://en.wikipedia.org/wiki/Cohesion_(computer_science))
@@ -208,4 +221,4 @@ An idea that changes in a system tend to occur around the axis of a class's resp
 6. [Conway's Law by Martin Fowler](https://martinfowler.com/bliki/ConwaysLaw.html)
 7. [Common Closure Principle](https://ericbackhage.net/clean-code/the-common-closure-principle/)
 8. [Common Closure Principle: The story of an evolving architecture](https://blog.devgenius.io/common-closure-principle-the-story-of-an-evolving-architecture-6919b452c8db)
-
+9. [SOLID Principles Swift](https://github.com/Vinodh-G/SOLID-Principles-Swift)
